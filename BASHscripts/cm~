@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+arg=${1:-'connect'}
+
+
+#if [ $arg -eq '\n' ]
+#then
+#  arg='connect'
+#else
+#  echo 'default:'$arg
+#fi
+bluetoothctl $arg A3:3A:17:05:88:E5

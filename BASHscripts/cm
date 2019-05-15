@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+arg=${1:-'connect'}
+if [ $arg=='r' ]
+then
+  bluetoothctl disconnect A3:3A:17:05:88:E5
+  bluetoothctl connect A3:3A:17:05:88:E5
+else
+  bluetoothctl $arg A3:3A:17:05:88:E5
+fi
+
