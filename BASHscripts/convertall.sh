@@ -21,7 +21,7 @@ do
    newfile=${file::-4}'.'$new
    cp $file '../'$backupfolder
    convert -density 300 -resize 1024 $file $newfile 
-   # <--- Stell die Auflösung hier ein, die 1024 sind die x-Achse des Bildes, y wird dann entsprechend gesetzt
+   # Stell die Auflösung hier ein, die 1024 sind die x-Achse des Bildes, y wird dann entsprechend gesetzt
    # -density ist hier die dpi
    #mv $file $backupfolder
    counter=$((counter+1))
